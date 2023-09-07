@@ -1,0 +1,9 @@
+.outer{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+}

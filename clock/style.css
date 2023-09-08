@@ -1,0 +1,36 @@
+.clock{
+    border-radius: 50%;
+    height: 30vw;
+    width:30vw;
+    background-color: rgb(55, 55, 115);
+    display: none;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+
+}
+.hours{
+    height: 3px;
+    width: 15vw;
+    background-color: black;
+    position: absolute;
+    transform-origin: right;
+    vertical-align: middle;
+
+}
+.minutes{
+    height: 3px;
+    width: 15vw;
+    background-color: greenyellow;
+    position: absolute;
+    transform-origin: right top;
+
+}
+.seconds{
+    height: 3px;
+    width: 15vw;
+    background-color: red;
+    position: absolute;
+    transform-origin: right top;
+
+}

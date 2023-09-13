@@ -1,0 +1,37 @@
+.search-bar{
+    text-align: center;
+}
+input{
+    font-size: 1rem;
+}
+.cityorstate{
+    display: grid;
+    gap: .25rem;
+    margin: 1rem;
+    justify-content: center;
+    display: none;
+}
+.hide{
+    display: none;
+}
+html {
+    box-sizing: border-box;
+    background: #ffc600;
+    font-family: 'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  input {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  
+  .hl {
+    background: #ffc600;
+  }

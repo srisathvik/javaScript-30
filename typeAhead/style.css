@@ -10,6 +10,7 @@ input{
     margin: 1rem;
     justify-content: center;
     display: none;
+    border: 1px solid black;
 }
 .hide{
     display: none;
@@ -34,4 +35,10 @@ html {
   
   .hl {
     background: #ffc600;
+  }
+
+  .data{
+    border: 1px solid black;
+    margin: 1rem;
+    padding-top: 1rem;
   }

@@ -15,10 +15,13 @@ function videoPause(){
     if(vid.paused){
         vid.play();
         pause.innerText = "⏸️"
+        console.log("paused");
     }
     else{
         vid.pause();
         pause.innerText = "▶️"
+        console.log("played");
+
     }
 }
 
@@ -47,6 +50,10 @@ function changeTime(e){
 
 }
 
+// function screensize(){
+//     vid.requestFullscreen();
+// }
+
 var vid = document.querySelector("#myvideo")
 // console.log(vid.volume);
 vid.addEventListener("click", videoPause);
@@ -56,6 +63,7 @@ var sound = document.querySelector("#sound");
 sound.addEventListener("input", changeVolume);
 function display(e){
     // console.log(vid.playbackRate);
+    
 }
 
 var speed = document.querySelector("#playbackspeed")
@@ -73,3 +81,12 @@ forward.addEventListener("click", forwardTime);
 
 var progressPoint = document.querySelector(".progress");
 progressPoint.addEventListener("click", changeTime);
+
+vid.addEventListener("keypress", (e)=>{
+    if(e.code == "space"){
+        videoPause;
+    }
+})
+
+// var fullScreen = document.querySelector(".fullscreen");
+// fullScreen.addEventListener("click", screensize);
